@@ -10,5 +10,13 @@ def index():
 def whereami():
 	return "Kdua"
 
+@app.route('/python')
+def python():
+	return render_template('python.html')
+
+@app.route('/linux')
+def linux():
+	return render_template('linux.html')
+
 if __name__ == '__main__':
 	app.run(host="0.0.0.0")
